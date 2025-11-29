@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DuplicateChecker {
+public class SudoDupeChecker {
 
     public static List<Map<String, Object>> checkForDupes(int[] arr) {
         List<Map<String, Object>> duplicates = new ArrayList<>();

@@ -1,12 +1,10 @@
-import java.util.Arrays;
-
-public class Splitter {
+public class SudoSplitter {
     private final int[][] grid;
     private final int[][] rows = new int[9][9];
     private final int[][] cols = new int[9][9];
     private final int[][] blocks = new int[9][9];
 
-    public Splitter(int[][] grid) {
+    public SudoSplitter(int[][] grid) {
         if (grid.length != 9 || grid[0].length != 9 ) {
             throw new IllegalArgumentException("Grid must be 9x9");
         }

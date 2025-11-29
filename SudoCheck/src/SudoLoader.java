@@ -4,14 +4,14 @@ import java.nio.file.Path;
 import java.util.List;
 
 //  Better Naming (Noun) instead of "ReadFile" the old one
-public class SudokuLoader {
+public class SudoLoader {
 
     // No Magic Numbers for easing the modification
     private static final int SIZE = 9;
     private static final int MIN_VAL = 1;
     private static final int MAX_VAL = 9;
 
-    //  This method only reads the file , it is csv hard.. if we want another database so it is!
+    //  This method only reads the file , it is csv hard. if we want another database so it is!
     public static List<String> readFile(String filePath) throws IOException {
         return Files.readAllLines(Path.of(filePath));
     }
