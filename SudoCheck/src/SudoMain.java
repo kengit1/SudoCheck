@@ -6,12 +6,18 @@ public class SudoMain {
         // initialize our new parser
         ArgParser parser = new ArgParser();
         parser.parse(args);// the main point of parsing is through the main point of the program
-
+        if(!parser.isTrueArg())
+        {
+            System.err.println("-*Error: Could not start the program for missing values");
+            parser.printHelpMenu();
+            return;
+        }
         if(parser.isHelpRequested())
         {
             parser.printHelpMenu();
             return; // done the purpose of the program
         }
+
         // get the parameters
 
         int mode = parser.getMode();
