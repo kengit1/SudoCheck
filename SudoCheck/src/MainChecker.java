@@ -15,14 +15,14 @@ public class MainChecker {
                 {1,1,1,1,1,1,1,1,1}
         };
         boolean valid = true;
-        Splitter s = new Splitter(solution);
+        SudoSplitter s = new SudoSplitter(solution);
         List<Mistake> mistakes = new ArrayList<>();
         int[][] rows = s.getRows();
         int[][] cols = s.getCols();
         int[][] blocks = s.getBlocks();
 
         for (int i = 0; i < 9; i++) {
-            List<Map<String, Object>> dupes = DuplicateChecker.checkForDupes(rows[i]);
+            List<Map<String, Object>> dupes = SudoDupeChecker.checkForDupes(rows[i]);
             if(!dupes.isEmpty()){
                 valid = false;
                 Mistake m = new Mistake("ROW",(i+1),dupes);
@@ -31,7 +31,7 @@ public class MainChecker {
         }
 
         for (int i = 0; i < 9; i++) {
-            List<Map<String, Object>> dupes = DuplicateChecker.checkForDupes(cols[i]);
+            List<Map<String, Object>> dupes = SudoDupeChecker.checkForDupes(cols[i]);
             if(!dupes.isEmpty()){
                 valid = false;
                 Mistake m = new Mistake("COL",(i+1),dupes);
@@ -40,7 +40,7 @@ public class MainChecker {
         }
 
         for (int i = 0; i < 9; i++) {
-            List<Map<String, Object>> dupes = DuplicateChecker.checkForDupes(blocks[i]);
+            List<Map<String, Object>> dupes = SudoDupeChecker.checkForDupes(blocks[i]);
             if(!dupes.isEmpty()){
                 valid = false;
                 Mistake m = new Mistake("BOX",(i+1),dupes);
