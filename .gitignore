@@ -10,7 +10,7 @@
 # =========================
 # Compiled Java classes & Build
 # =========================
-out/
+out/production
 build/
 target/
 *.class
