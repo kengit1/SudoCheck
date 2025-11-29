@@ -6,7 +6,7 @@
 # =========================
 # Keep the project folder and its src subfolder
 # =========================
-!/project/
+!/project/SudoChecker/
 !/project/SudoChecker/src/
 # =========================
 # Keep any .txt files anywhere
