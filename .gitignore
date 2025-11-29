@@ -1,55 +1,19 @@
 # =========================
-# Ignore everything by default
-# =========================
-/*
-
-# =========================
-# Keep the project folder and its src subfolder
-# =========================
-!/project/SudoChecker/
-!/project/SudoChecker/src/
-# =========================
-# Keep any .txt files anywhere
-# =========================
-!*.txt
-
-# =========================
-# IntelliJ IDEA
+# IntelliJ IDEA & Editors
 # =========================
 .idea/
 *.iml
-*.ipr
 *.iws
-
-# =========================
-# VS Code
-# =========================
+*.ipr
 .vscode/
 
 # =========================
-# Eclipse
-# =========================
-.project
-.classpath
-.settings/
-bin/
-
-# =========================
-# NetBeans
-# =========================
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-# =========================
-# Build output folders
+# Compiled Java classes & Build
 # =========================
 out/
 build/
 target/
+*.class
 
 # =========================
 # OS generated files
@@ -61,8 +25,3 @@ Thumbs.db
 # Logs
 # =========================
 *.log
-
-# =========================
-# Compiled Java classes
-# =========================
-*.class
